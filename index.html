@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Example</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar */
+        .nav-container {
+          display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+            background-color: rgb(0, 191, 255);
+            width: 100%; /* Full width */
+            height: 70px; /* Fixed height */
+            position: fixed; /* Fix position at the top */
+            top: 0;
+            right: 15px;
+            left: 0px; /* Align to the left */
+            border-radius: 0 0 15px 15px;
+            z-index: 500;
+            padding: 5px 20px; /* Add horizontal padding */
+            box-sizing: border-box; /* Include padding in width */
+        }
+
+        .nav-text {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .nav-text a {
+            text-decoration: none;
+            color: black;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .nav-text a:hover {
+            color: white; /* Hover effect */
+        }
+
+        /* Content Area */
+        .content {
+            display: flex;
+            justify-content: center; /* Center the content */
+            align-items: center;
+            padding: 20px;
+            margin-top: 90px; /* Ensure no overlap with fixed navbar */
+            border-radius: 15px;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        .content img {
+            border-radius: 15px;
+            max-width: 100%; /* Ensure image responsiveness */
+            height: auto;
+            margin: 20px;
+        }
+
+        .content p {
+            max-width: 45%;
+            margin: 20px;
+            text-align: justify;
+        }
+
+        /* Other Content Styles */
+        h4 {
+            text-align: center;
+        }
+
+        p.below-image {
+            margin: 20px 10%;
+            text-align: justify;
+        }
+
+        ul.list {
+            margin: 20px 10%;
+            font-weight: bold;
+        }
+
+        h5 {
+            text-align: center;
+        }
+
+        .link {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        a {
+            color: rgb(246, 132, 151);
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        /* Media Query for Mobile Screens */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column; /* Stack nav bar items vertically */
+                height: auto;
+                padding: 10px;
+                
+            }
+
+            .nav-text {
+                flex-direction: row;
+                gap: 20px;
+                align-items: center;
+            }
+
+            .nav-text a {
+                margin: 10px 0; /* Vertical spacing between links */
+                font-size: 16px; /* Smaller font for mobile */
+            }
+
+            .content {
+                flex-direction: column; /* Stack content vertically on mobile */
+            }
+
+            .content img {
+                max-width: 90%; /* Ensure image fits on smaller screens */
+            }
+
+            .content p {
+                max-width: 100%;
+                margin: 10px;
+                padding: 0 10px;
+            }
+
+            p.below-image, ul.list {
+                margin-left: 5%; /* Adjust margins for smaller screens */
+                margin-right: 5%;
+            }
+
+            h4 {
+                margin: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav-container">
+        <img src="pana1.png" alt="Your Image" class="sidebar-image" width="50" height="50">
+        <div class="nav-text">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In velit quae quis molestiae quia corrupti quaerat quibusdam veniam voluptates cum rerum, dolor debitis adipisci amet magni ullam repellendus quo porro reprehenderit cupiditate molestias quisquam mollitia tempora exercitationem! Odio perspiciatis doloremque ducimus amet ex debitis cupiditate nihil distinctio eaque qui beatae iste, soluta illum. Explicabo officia quos deserunt repellat non cum eos eligendi, at et aspernatur accusamus dicta voluptate, sequi harum atque aperiam in facere quas, dolore fugit repudiandae asperiores laborum.</p>
+        <img src="robert1.png" alt="Laptop with an additional keyboard" width="400" height="300">
+    </div>
+
+    <!-- Below Image Content -->
+    <h4><u>Robert Frank</u></h4>
+    <p class="below-image">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsam quibusdam vel dignissimos praesentium! Ab sequi earum temporibus tempora odit, cum consequuntur fuga accusantium debitis!</p>
+
+    <!-- List -->
+    <ul class="list">
+        <li>Linux</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Docker</li>
+        <li>Kubernetes</li>
+    </ul>
+
+    <!-- Footer -->
+    <div class="link">
+        <a href="https://github.com/Ameen-Alam/PIAIC-HTML-CSS-Assignments/?tab=readme-ov-file">GitHub/GIAIC-HTML-CSS-Assignments</a>
+    </div>
+
+    <h5>Author: Azmat Ali</h5>
+</body>
+</html>
